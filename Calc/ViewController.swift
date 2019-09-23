@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     var accumulator = 0.0
     var register = 0.0
     var registry = String()
+    var lastOp = String()
+    var tape = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,26 +33,28 @@ class ViewController: UIViewController {
             let senderText = senderLabel.text else { return }
 
         switch senderText {
-        case "":
-            break //TODO: Print
+        case "🖨":
+            print()
         case "÷":
-            break //TODO: Divide
+            divide()
+            lastOp = senderText
         case "×":
-            break //TODO: Multiply
+            multiply()
+            lastOp = senderText
         case "−":
-            break //TODO: Subtract
+            subtract()
+            lastOp = senderText
         case "+":
-            break //TODO: Add
+            add()
+            lastOp = senderText
         case "=":
-            break //TODO: Equate
+            equate()
         case "±":
-            break //TODO: Negate
+            negate()
         case "AC":
-            break //TODO: Clear
+            clear()
         default:
-            let temp = registry.appending(senderText)
-            guard let result = Double(temp) else { return }
-            register = result
+            input(senderText)
         }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		571A1B6623397385005F0E25 /* ViewController+Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A1B6523397385005F0E25 /* ViewController+Logic.swift */; };
 		573607B923394481002518D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573607B823394481002518D0 /* AppDelegate.swift */; };
 		573607BB23394481002518D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573607BA23394481002518D0 /* SceneDelegate.swift */; };
 		573607BD23394481002518D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573607BC23394481002518D0 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		571A1B6523397385005F0E25 /* ViewController+Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Logic.swift"; sourceTree = "<group>"; };
 		573607B523394481002518D0 /* Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		573607B823394481002518D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		573607BA23394481002518D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,9 +104,10 @@
 				573607B823394481002518D0 /* AppDelegate.swift */,
 				573607BA23394481002518D0 /* SceneDelegate.swift */,
 				573607BC23394481002518D0 /* ViewController.swift */,
+				571A1B6523397385005F0E25 /* ViewController+Logic.swift */,
+				573607C323394482002518D0 /* LaunchScreen.storyboard */,
 				573607BE23394481002518D0 /* Main.storyboard */,
 				573607C123394482002518D0 /* Assets.xcassets */,
-				573607C323394482002518D0 /* LaunchScreen.storyboard */,
 				573607C623394482002518D0 /* Info.plist */,
 			);
 			path = Calc;
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				573607BD23394481002518D0 /* ViewController.swift in Sources */,
+				571A1B6623397385005F0E25 /* ViewController+Logic.swift in Sources */,
 				573607B923394481002518D0 /* AppDelegate.swift in Sources */,
 				573607BB23394481002518D0 /* SceneDelegate.swift in Sources */,
 			);
