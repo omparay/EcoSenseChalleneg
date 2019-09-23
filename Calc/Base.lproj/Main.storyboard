@@ -406,7 +406,7 @@
                     </view>
                     <connections>
                         <outlet property="displayLabel" destination="wx3-z3-RyO" id="h4U-kX-qYK"/>
-                        <segue destination="fmW-zb-OHS" kind="show" identifier="ListViewIdentifier" id="HOT-Gr-lPt"/>
+                        <segue destination="fmW-zb-OHS" kind="presentation" identifier="ListViewIdentifier" id="HOT-Gr-lPt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
