@@ -16,6 +16,7 @@
 		573607C523394482002518D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573607C323394482002518D0 /* LaunchScreen.storyboard */; };
 		573607D023394482002518D0 /* CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573607CF23394482002518D0 /* CalcTests.swift */; };
 		573607DB23394482002518D0 /* CalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573607DA23394482002518D0 /* CalcUITests.swift */; };
+		5783F8792339874B00E01F7E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5783F8782339874B00E01F7E /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		573607D623394482002518D0 /* CalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		573607DA23394482002518D0 /* CalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcUITests.swift; sourceTree = "<group>"; };
 		573607DC23394482002518D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5783F8782339874B00E01F7E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				573607B823394481002518D0 /* AppDelegate.swift */,
+				5783F8782339874B00E01F7E /* ListViewController.swift */,
 				573607BA23394481002518D0 /* SceneDelegate.swift */,
 				573607BC23394481002518D0 /* ViewController.swift */,
 				571A1B6523397385005F0E25 /* ViewController+Logic.swift */,
@@ -265,6 +268,7 @@
 				573607BD23394481002518D0 /* ViewController.swift in Sources */,
 				571A1B6623397385005F0E25 /* ViewController+Logic.swift in Sources */,
 				573607B923394481002518D0 /* AppDelegate.swift in Sources */,
+				5783F8792339874B00E01F7E /* ListViewController.swift in Sources */,
 				573607BB23394481002518D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
