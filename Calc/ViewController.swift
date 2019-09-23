@@ -12,10 +12,26 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var displayLabel: UILabel!
 
-    var accumulator = 0.0
-    var register = 0.0
-    var registry = String()
-    var lastOp = String()
+    var accumulator = 0.0 {
+        didSet {
+            debugPrint("Accumulator: \(self.accumulator)")
+        }
+    }
+    var register = 0.0 {
+        didSet {
+            debugPrint("Register: \(self.register)")
+        }
+    }
+    var buffer = String() {
+        didSet {
+            debugPrint("Buffer: \(self.buffer)")
+        }
+    }
+    var lastOp = String() {
+        didSet {
+            debugPrint("LastOp: \(self.lastOp)")
+        }
+    }
     var tape = [String]()
 
     override func viewDidLoad() {

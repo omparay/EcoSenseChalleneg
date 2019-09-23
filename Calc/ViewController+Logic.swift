@@ -11,7 +11,7 @@ import Foundation
 extension ViewController {
 
     func print(){
-
+        performSegue(withIdentifier: "ListViewIdentifier", sender: self)
     }
 
     func divide(){
@@ -25,7 +25,7 @@ extension ViewController {
             }
         }
         register = 0
-        registry = String()
+        buffer = String()
     }
 
     func multiply(){
@@ -35,7 +35,7 @@ extension ViewController {
             accumulator = accumulator * register
         }
         register = 0
-        registry = String()
+        buffer = String()
     }
 
     func subtract(){
@@ -45,7 +45,7 @@ extension ViewController {
             accumulator = accumulator - register
         }
         register = 0
-        registry = String()
+        buffer = String()
     }
 
     func add(){
@@ -55,13 +55,13 @@ extension ViewController {
             accumulator = accumulator + register
         }
         register = 0
-        registry = String()
+        buffer = String()
     }
 
     func negate(){
         register = 0 - register
-        registry = String(format: "-%@", registry)
-        displayLabel.text = "\(registry)"
+        buffer = String(format: "-%@", buffer)
+        displayLabel.text = "\(buffer)"
     }
 
     func equate(){
@@ -78,24 +78,24 @@ extension ViewController {
             return
         }
         displayLabel.text = "\(accumulator)"
-        registry = String()
+        buffer = String()
         lastOp = String()
     }
 
     func clear(){
         accumulator = 0.0
         register = 0.0
-        registry = String()
+        buffer = String()
         lastOp = String()
         tape = [String]()
-        displayLabel.text = registry
+        displayLabel.text = buffer
     }
 
     func input(_ text: String){
-        let temp = registry.appending(text)
+        let temp = buffer.appending(text)
         guard let result = Double(temp) else { return }
-        registry = temp
+        buffer = temp
         register = result
-        displayLabel.text = "\(registry)"
+        displayLabel.text = "\(buffer)"
     }
 }

@@ -436,7 +436,7 @@
                             <outlet property="delegate" destination="fmW-zb-OHS" id="TTZ-Cm-KJz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0cq-jp-yed"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAx-Wb-hDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
