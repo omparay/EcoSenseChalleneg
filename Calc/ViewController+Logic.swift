@@ -93,9 +93,7 @@ extension ViewController {
 
     func input(_ text: String){
         let temp = registry.appending(text)
-        debugPrint(temp)
         guard let result = Double(temp) else { return }
-        debugPrint(result)
         registry = temp
         register = result
         displayLabel.text = "\(registry)"
