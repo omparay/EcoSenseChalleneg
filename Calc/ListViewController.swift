@@ -42,7 +42,7 @@ class ListViewController: UITableViewController {
         default:
             guard let textLabel = cell.textLabel else { return cell }
             textLabel.font = UIFont.systemFont(ofSize: 40.0)
-            textLabel.textColor = UIColor.lightText
+            textLabel.textColor = (self.traitCollection.userInterfaceStyle == .light) ? UIColor.darkText : UIColor.lightText
             textLabel.text = list[indexPath.row]
 
         }
