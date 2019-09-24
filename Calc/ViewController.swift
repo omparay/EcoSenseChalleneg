@@ -44,6 +44,14 @@ class ViewController: UIViewController {
 
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ListViewIdentifier" {
+            if let destination = segue.destination as? ListViewController {
+                destination.list = tape
+            }
+        }
+    }
+
     @IBAction func buttonPressed(sender: UIButton) {
         guard let senderLabel = sender.titleLabel,
             let senderText = senderLabel.text else { return }

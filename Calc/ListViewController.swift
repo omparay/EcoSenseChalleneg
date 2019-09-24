@@ -40,7 +40,11 @@ class ListViewController: UITableViewController {
             textLabel.textColor = UIColor.blue
             textLabel.text = "Done"
         default:
-            break
+            guard let textLabel = cell.textLabel else { return cell }
+            textLabel.font = UIFont.systemFont(ofSize: 40.0)
+            textLabel.textColor = UIColor.lightText
+            textLabel.text = list[indexPath.row]
+
         }
         
         return cell

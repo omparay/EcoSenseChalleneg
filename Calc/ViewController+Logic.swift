@@ -17,9 +17,11 @@ extension ViewController {
     func divide(){
         if lastOp == String() {
             accumulator = register
+            tape.append("\(register)")
         } else {
             if register != 0.0 {
                 accumulator = accumulator / register
+                tape.append("\(register) \(lastOp)")
             } else {
                 displayLabel.text = "Div By Zero"
             }
@@ -31,8 +33,10 @@ extension ViewController {
     func multiply(){
         if lastOp == String() {
             accumulator = register
+            tape.append("\(register)")
         } else {
             accumulator = accumulator * register
+            tape.append("\(register) \(lastOp)")
         }
         register = 0
         buffer = String()
@@ -41,8 +45,10 @@ extension ViewController {
     func subtract(){
         if lastOp == String() {
             accumulator = register
+            tape.append("\(register)")
         } else {
             accumulator = accumulator - register
+            tape.append("\(register) \(lastOp)")
         }
         register = 0
         buffer = String()
@@ -51,8 +57,10 @@ extension ViewController {
     func add(){
         if lastOp == String() {
             accumulator = register
+            tape.append("\(register)")
         } else {
             accumulator = accumulator + register
+            tape.append("\(register) \(lastOp)")
         }
         register = 0
         buffer = String()
@@ -77,6 +85,7 @@ extension ViewController {
         default:
             return
         }
+        tape.append("\(accumulator) =")
         displayLabel.text = "\(accumulator)"
         buffer = String()
         lastOp = String()
@@ -87,7 +96,7 @@ extension ViewController {
         register = 0.0
         buffer = String()
         lastOp = String()
-        tape = [String]()
+        tape.append(String())
         displayLabel.text = buffer
     }
 
